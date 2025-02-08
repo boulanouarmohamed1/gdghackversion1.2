@@ -37,7 +37,6 @@ function App() {
           <Navbar />
           <Project/>
           <Footer />
-          <Profile />
           </>} />
       </Routes>
      
