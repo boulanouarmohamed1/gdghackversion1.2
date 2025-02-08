@@ -1,9 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import logo from "../assets/logo.png";
 import pfp from "../assets/pfp.png";
 export default function Navbar() {
+  const navigate = useNavigate();
+  const handletake = () => {
+    navigate("/profile");
+  }
   return (
+
     <nav className="w-full bg-gradient-to-br from-gray-800 to-black text-white shadow-lg p-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         
@@ -34,6 +39,7 @@ export default function Navbar() {
             src={pfp}
             alt="Profile"
             className="object-cover w-full h-full"
+            onClick={handletake}
           />
         </motion.div>
       </div>
