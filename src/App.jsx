@@ -3,11 +3,11 @@ import Welcome from "./components/Welcome";  // Update paths as needed
 import Chatbot from "./components/Chatbot";
 import Categories from "./components/Categories";
 import Register from "./components/Register";
-import ProfilePopup from "./components/Profilepopup";
 import AboutUs from "./components/Aboutus";
 import Footer from "./components/Footer";
 import Navbar from "./components/NavBar";
 import Project from "./components/Project";
+import Profile from "./components/Profile";
 function App() {
  
   return (
@@ -30,14 +30,17 @@ function App() {
           </>
           } 
         />
-        <Route path="/profile" element={<ProfilePopup/>} />
+         <Route path="/profile" element={<>
+          <Navbar /> <Profile /> <Footer /> </>} />
         <Route path="/freelancing" element={
           <>
           <Navbar />
           <Project/>
           <Footer />
+          <Profile />
           </>} />
       </Routes>
+     
     </Router>
   );
 }
