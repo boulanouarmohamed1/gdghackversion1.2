@@ -10,7 +10,7 @@ function Chatbot() {
   const [showChatbot, setShowChatbot] = useState(false);
 
   const handleClick = () => {
-    window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    window.location.href = "https://www.eventbrite.com/d/online/free--classes/";
   };
 
   return (
